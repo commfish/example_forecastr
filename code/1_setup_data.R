@@ -6,8 +6,8 @@
 
 # load code----
 install.packages("remotes") 
-remotes::install_git("https://gitlab.com/transboundary-committee/sourcecode/r-packages/TBRforecasting")
-
+remotes::install_git("https://gitlab.com/transboundary-committee/sourcecode/r-packages/tbrforecasting")
+require(TBRforecasting)
 # load data----
 read.csv(file.path(data.directory,'Taku_sockeye_brood_table.csv'), header=TRUE, as.is=TRUE, strip.white=TRUE) -> brood
 
